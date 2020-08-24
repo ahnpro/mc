@@ -1,78 +1,148 @@
 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body style="padding:none; margin: 0; ">
-    <!-- 주석달기 첫 페이지-->
-    
-    <img src="img/main_top_bg.jpg" style="width: 100%;">
-    <h1 style="text-align: center; margin-top: 100px; 
-    margin-bottom: 0; font-family: serif; letter-spacing:12;">
-        우리결혼합니다</h1><br>
-    <h2 style="text-align: center; margin: 0;
-    font-weight: 300; font-size: 40pt; color: rgb(176, 224, 104);">12/24</h2><br>
-    <h3 style="text-align: center; margin-top: 150px; margin-bottom: 0;font-family: serif;"> 유정현 * 이사랑</h3><br>
-    <p style="text-align: center;font-family: serif; line-height: 24px;">
-        2020.12.24  SAT 12:00 PM<br>
-        소풍컨벤션웨딩 7층 라온제나홀
-    </p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2모바일 청첩장</title>
+        <style>
+            
+            *{border: 0px dashed red; margin: 0; padding: 0;}
+            
+            h1{text-align: center; font-family: serif;}
+            h2{text-align: center; font-family: serif; margin: 0; font-weight: 100; font-size: 36px; }
+            h3{text-align: center; font-family: serif;}
 
-    <!-- 두번째 페이지 초대합니다 -->
-    <div style="padding-top: 100px;"></div>
-    <div style="background-color:#fbfbfb;padding-top: 100px; padding-bottom: 50px;">
-        <img src="img/title_img_1.jpg" style="width: 100%;">
-        <!-- <h2>초대합니다</h2> -->
-        <p style="text-align: center; font-family: serif; margin-top: 100px; margin-bottom: 100px;">
-            평생을 같이하고 싶은 사람을 만났습니다.<br>
-            서로아끼며 이해하고, 사랑하며 살겠습니다.<br>
-            저희 약속 위에 따뜻한 격려로 축복해주시면<br>
-            감사하겠습니다.</p>
-        <img src="img/img1.jpg" style="width: 100%; margin-bottom: 50px;">
-        <p style="text-align: center; ">
-            <span style="color: lightskyblue;">신랑에게 축하인사</span> <img src="img/call25.png" style="vertical-align: middle; margin-left: 25px; margin-right: 25px; "> 
-            <img src="img/sms25.png" style="vertical-align: middle;">
-        </p>
-        <p style="text-align: center; ">
-            <span style="color: magenta;">신부에게 축하인사 <img src="img/call25.png"
-            style="vertical-align: middle; margin-left: 25px; margin-right: 25px;"> 
-            <img src="img/sms25.png" style="vertical-align: middle;">
-        </p>
-    </div>
+            /* 클래스 부분 */
+            p{text-align: center;font-family: serif; line-height: 24px;}
+            .width_100{width: 100%;}
+            .text_green{color: rgb(127, 182, 155); line-height: 160px;}
 
-    <!-- 세번째 페이지 -->
-    
-        <h2 style="background-color:#637e52;height: 60px; text-align: center; line-height: 60px; font-family: serif; font-size: 18px; color: white; margin: 0;">
-            혼주분께 연락하기</h2>
-    
-    <div style="background-color: #eaf1e6;  display: flex; "> 
+            
+            /* hero */
+            .hero{width: 100%; height: 100%;}
+            .hero_title{margin-top: 100px;  letter-spacing:12;}
+            .hero_name{margin-top: 200px;}
 
-        <div style="text-align: center; width: 50%; padding-top: 100px; padding-bottom: 100px;">
-            신랑측 혼주<br> 
-            아버지 유도기<br> 
-            어머니 이순오 <br>
+            /* invite */
+            .invite_wrap{width: 100%; height: 100; background-color: #fbfbfb; padding-top: 100px;}
+            .invite_text{margin-top: 60px; margin-bottom: 60px;}
+            .invite_call{margin: 60px;}
+            .invite_text_husband{ line-height: 25px; width: 25px;}
+            .invite_call_img{vertical-align: middle; margin: 10px ; }
+            .invite_mail_img{vertical-align: middle; width: 25px;}
+
+
+            /* contact */
+            .contact{display: flex; background-color: #eaf1e6; padding-top: 60px; padding-bottom: 60px;}
+            .contact_title{background-color: #637e63; color: white; line-height: 60px;}
+            .contact_1{width: 50%;}
+            .contact_2{width: 50%;}
+            .contact_text{line-height: 36px;}
+
+            /* location */
+            .location{padding-top: 100px;}
+            .location_title{background-color: #656565; color: white; font-family: sans-serif; line-height: 36px; font-weight: 300;}
+            .location_img{margin-bottom: 100px;}
+            .location_text{font-family: sans-serif; line-height: 24px; font-weight: 300; margin-top:60px; margin-bottom: 60px;}
+
+            /* footer */
+            .footer{display: flex; background-color:#cccccc;}
+            .sns_img{width: 25%;}
+            .brand{background-color: #aaaaaa; color: white; font-size: 30px; line-height: 60px; font-family: sans-serif; font-size: 28px; font-weight: 200;}
+            
+
+        </style>
+    </head>
+    <body style="padding:none; margin: 0; ">
+
+        <!-- 주석달기 첫 페이지-->
+        <div class="hero">
+            <img class="width_100" src="img/main_top_bg.jpg";>
+            <h1 class="hero_title"> 우리결혼합니다</h1><br>
+            <h2 class="text_green">12/24</h2><br>
+            <h3 class="hero_name"> 유정현 * 이사랑</h3><br>
+            <p>
+                2020.12.24  SAT 12:00 PM<br>
+                소풍컨벤션웨딩 7층 라온제나홀
+            </p>
         </div>
-        <div style="text-align: center; width: 50%; padding-top: 100px; padding-bottom: 100px;">
-            신부측 혼주분<br>
-            아버지 이중호<br>
-            어머니 고영심
-        </div>
+
+        <!-- 두번째 페이지 초대합니다 -->
+        <div class="invite_wrap">
+            <img class="width_100" src="img/title_img_1.jpg">
+            <p class="invite_text">  
+                평생을 같이하고 싶은 사람을 만났습니다.<br>
+                서로아끼며 이해하고, 사랑하며 살겠습니다.<br>
+                저희 약속 위에 따뜻한 격려로 축복해주시면<br>
+                감사하겠습니다. 
+            </p>
+            <img class="width_100" src="img/img1.jpg">
+            <p class="invite_call">
+                <span class="invite_text_husband">신랑에게 축하인사</span><img class="invite_call_img" src="img/call25.png"><img class="invite_mail_img" src="img/sms25.png"><br>
+                <span>신부에게 축하인사</span><img class="invite_call_img" src="img/call25.png"><img class="invite_mail_img" src="img/sms25.png">
+            </p>
+
+            <!-- 혼주분께 연락하기 -->
+            <h3 class="contact_title">혼주분께 연락하기</h3>
+                <div class="contact">                
+                    <div class="contact_1">
+                        <p class="contact_text">신랑측 혼주<br>
+                            아버지 유도기<br>
+                            <img class="invite_call_img" src="img/call25.png"><img class="invite_mail_img" src="img/sms25.png"><br>
+                            어머니 이순오<br>
+                            <img class="invite_call_img" src="img/call25.png"><img class="invite_mail_img" src="img/sms25.png">
+                        </p>
+
+                    </div>
+
+                    <div class="contact_2">
+                        <p class="contact_text">신부측 혼주<br>
+                            아버지 이중호<br>
+                            <img class="invite_call_img" src="img/call25.png"><img class="invite_mail_img" src="img/sms25.png"><br>
+                            어머니 고영심<br>
+                            <img class="invite_call_img" src="img/call25.png"><img class="invite_mail_img" src="img/sms25.png">
+                        </p>
+
+                    </div>
+
+            </div>
+
+            <!-- 오시는 길 -->            
+
+            <div class="location">
+                <img class="location_img width_100" src="img/title_img_4.jpg">
+                <img class="width_100" src="img/map.jpg">
+                <h3 class="location_title">카카오맵 바로가기</h3>
+                <p class="location_text">
+                    소풍컨벤션웨딩 7층 라온제나홀<br>
+                    경기 부천시 송내대로 239<br>
+                    032-624-7777<br>
+                    <br>
+                    버스안내<br>
+                    일반 : 5-6,23-2,23-5,37,50-1,52,<br>
+                    70,87,6-2,56,59,59-1,61,66<br>
+                    광역 : 302, 700, 780, 1001, 5000,<br>
+                    8106, 9300, 8906, 9008<br>
+                    <br>
+                    자가용 안내<br>
+                    "소풍컨벤션웨딩" 검색<br>
+                    <br>
+                    지하철 안내<br>
+                    7호선 상동역 - 1번 출구 - 도보 2분<br>
+                    1호선 송내역 - 2번 출구 - 27번 버스<br>
+                </p>
+            </div>
+
+            <!-- footer -->
+            <div class="footer">
+                <img class="sns_img" src="img/btn_facebook.png">
+                <img class="sns_img" src="img/btn_twitter.png">
+                <img class="sns_img" src="img/btn_kakao.png">
+                <img class="sns_img" src="img/btn_story.png">
+            </div>  
+
+            <h3 class="brand">BHANDS CARD</h3>
+
         
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    <div style="padding: 100px;"></div>
-</body>
-</html>
+    </body>
+    </html>
